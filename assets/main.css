@@ -149,6 +149,11 @@ a:hover {
   background-position: center;
 } */
 
+/* .tech img {
+  min-width: 500px;
+  height: 100px;
+} */
+
 #sec2 {
   background: rgb(243, 251, 255);
 }
@@ -185,6 +190,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   margin-top: -15px;
+  height: 500px;
 }
 
 #cardContact {
@@ -199,10 +205,6 @@ a:hover {
 }
 
 /*APPS*/
-
-#cardFour {
-  margin-top: 40px;
-}
 
 #apps li a {
   text-decoration: none;
@@ -313,9 +315,9 @@ a:hover {
   display: none;
 }
 
-#portfolio {
+/* #portfolio {
   display: none;
-}
+} */
 
 .arrowToPort {
   font-size: 20px;
