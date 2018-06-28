@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #e2f4fe;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.makeCursor {
+  cursor: pointer;
+}
+
+.makeCursor:hover {
+  color: rgb(255, 123, 123);
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: rgb(255, 123, 123);
+}
+
+/*Navigation*/
+
+#topBar {
+  background: rgb(92, 149, 185);
+}
+
+.brand-logo {
+  font-family: "Homemade Apple", cursive;
+}
+
+.no-padding-bottom {
+  padding-bottom: 90px !important;
+  margin-top: 0px;
+}
+
+.navlinks {
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+
+/*Top section*/
+
+#roundedimg {
+  border-radius: 50%;
+  width: 200px;
+  margin-top: 90px;
+}
+
+#topCard {
+  background: url("http://www.intertech.ps/images1/home_sec.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  background-position: center;
+}
+
+.topTitle h1 {
+  font-size: 80px;
+  text-align: center;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+#topSub {
+  font-size: 30px;
+}
+
+.parent {
+  padding-right: 250px;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+.child {
+  width: 70%;
+  height: 80%;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  transform: scale(1.2);
+}
+
+#cardTitle {
+  font-size: 70px;
+  color: white;
+}
+
+#cardSub {
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+/* #cardSecond {
+  background: url("/assets/img/sec2bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+} */
+
+#sec2 {
+  background: rgb(243, 251, 255);
+}
+
+#cardSub1 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: white;
+}
+
+#abouttitle {
+  font-size: 40px;
+}
+
+#cardSub2 {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.tech img {
+  width: 30%;
+}
+
+.tech li {
+  display: inline-block;
+}
+
+#cardThree {
+  background: #111215 no-repeat;
+  /* background: url("http://paceinfonet.org/wp-content/themes/icemagtheme/plugins/LayerSlider/sampleslider/icemag-sliders/blue-background.jpg")no-repeat; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  margin-top: -15px;
+}
+
+#cardContact {
+  background: #111215 no-repeat;
+  /* background: url("http://paceinfonet.org/wp-content/themes/icemagtheme/plugins/LayerSlider/sampleslider/icemag-sliders/blue-background.jpg")no-repeat; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  margin-top: -39px;
+}
+
+/*APPS*/
+
+#cardFour {
+  margin-top: 40px;
+}
+
+#apps li a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#apps li:hover {
+  color: rgb(57, 57, 138);
+  cursor: pointer;
+}
+
+/*//////////////Responsive vid/////////////*/
+
+.wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*allAPPS*/
+
+.closeApps {
+  color: rgb(126, 1, 9);
+  font-size: 40px;
+  cursor: pointer;
+  filter: brightness(100%);
+}
+
+/* #allApps{
+    
+}
+
+#moreApps{
+}
+
+#moreApps li{
+} */
+
+.cardSub2 {
+  color: white;
+}
+
+/*functionality js apps*/
+
+/*////////////JS/////////////////*/
+
+#allHtmlCss {
+  display: none;
+  background: url("/assets/img/html-css.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  margin-top: -20px;
+}
+
+#allJsApps {
+  display: none;
+  background: url("/assets/img/jsbg.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  margin-top: -20px;
+  height: 700px;
+}
+
+/*////////////Node/////////////////*/
+
+#allNodeApps {
+  display: none;
+  background-color: black;
+  background: url("/assets/img/nodebg.png") no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-position: center;
+  margin-top: -20px;
+}
+
+#liriVid {
+  display: none;
+}
+
+#bamazon,
+#liri {
+  font-size: 40px;
+}
+
+#bamazonTitle {
+  display: none;
+}
+
+#bamazonVid {
+  display: none;
+}
+
+#portfolio {
+  display: none;
+}
+
+.arrowToPort {
+  font-size: 20px;
+  position: absolute;
+  margin-left: 31%;
+  bottom: 0;
+  color: #84ce24;
+}
+
+/*Contact*/
+
+#cardFour {
+  background: #5d93b6;
+  background-position: center;
+  margin-bottom: 1px;
+}
+
+#form {
+  background: white;
+  border-radius: 10px;
+}
+
+textarea {
+  height: 300px;
+}
+
+#submit {
+  background: #5353ff;
+}
+
+/*footer*/
+
+.footer {
+  background: #111215;
+  bottom: 0;
+  color: rgb(197, 197, 197);
+}
+
+.footer a {
+  color: rgb(197, 197, 197);
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footerIcons {
+  right: 0;
+  text-align: center;
+}
+
+.footerIcons li {
+  display: inline-block;
+  font-size: 200%;
+  padding-right: 10px;
+}
+
+/*Media queries*/
+
+@media only screen and (max-width: 360px) {
+  #topTitle {
+    font-size: 300%;
+  }
+  #topSub {
+    font-size: 100%;
+  }
+  #roundedimg {
+    width: 50%;
+  }
+  #cardTitle {
+    font-size: 300%;
+  }
+  #cardSub {
+    font-size: 100%;
+  }
+  /* li{
+        position: absolute;
+        display: inline-block;
+    } */
+  .tech li {
+    width: 20%;
+    position: relative;
+    display: inline-block;
+    margin-top: 15%;
+  }
+  .tech img {
+    width: 50%;
+  }
+  .child {
+    width: 50%;
+    height: 20%;
+  }
+}
+
+#thanks {
+  display: none;
+  text-align: center;
+  font-size: 40px;
+  color: green;
+}
