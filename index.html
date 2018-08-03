@@ -22,11 +22,11 @@
 <body>
 
     <!--top bar navigation-->
-    <nav>
+    <nav style="position: fixed;z-index: 1;">
 
         <div class="nav-wrapper" id="topBar">
             <div class="container">
-                <a href="#!" class="brand-logo">Jon Disla</a>
+                <a href="#!" class="brand-logo hoverable">Jon Disla</a>
                 <ul class="right hide-on-med-and-down">
                     <li id="about">
                         <a>About</a>
@@ -47,32 +47,76 @@
 
     <!--First section-->
 
-    <div class="col s12 no-padding-bottom" id="topCard">
+    <div class="col s12 no-padding-bottom hoverable" id="topCard">
         <div class="container">
-            <center>
-                <span class="topTitle">
-                    <h1>Hello, I'm Jon Disla</h1>
-                </span>
-                <p id="topSub">A passionate
-                    <strong>Web Developer</strong> from the US.</p>
-                <p id="topSub">Working on the web for one year and loving everything about it.</p>
-                <img id="roundedimg" src="assets/img/jd.jpg">
-            </center>
+            <div id="topcontents">
+                <center>
+                    <span class="topTitle">
+                        <h1>Hello, I'm Jon Disla</h1>
+                    </span>
+                    <p id="topSub">A passionate
+                        <strong>Web Developer</strong> from the US.</p>
+                    <p id="topSub">Working on the web for one year and loving everything about it.</p>
+                    <img id="roundedimg" src="assets/img/jd.jpg" class="hoverable">
+                </center>
+            </div>
         </div>
     </div>
 
     <!--About me-->
-    <!-- <div class="col s12">
-        <div class="card no-padding-bottom" id="cardSecond"> -->
+    <!-- <div class="col s12">-->
+    <!-- <div class="card no-padding-bottom hoverable" id="cardSecond"> -->
     <div class="card-content container">
         <center>
-            <span id="abouttitle">A little about me:</span>
+            <span id="abouttitle">A little about me</span>
         </center>
         <section id="sec2">
-            <p id="cardSub2">Experience with HTML and CSS and Javascript libraries. I like to design and develop user friendly applications
-                for better interaction and accesiblity. I also have experience with the following technologies:
-            </p>
-            <center>
+            <div class="row">
+                <div class="card col s12 m12 l3 hoverable" id="cardSub2">
+                    <center>
+                        <h5 style="text-decoration: underline;">The start</h5>
+                    </center>
+                    <p id="aboutext">I started dabbling in Geocities and Angelfire during the late 90s/2000s. Web development was a hobby
+                        for me back then. I still use principles learnt long ago and have the same hunger to learn and desire
+                        to innovate.</p>
+                    <br>
+                    <p id="aboutext">
+                        Fast forward to today, I love web development even more.
+                        <span style="font-weight: bold;" class="hoverable">I really enjoy the design and user experience aspect of the web; from simple animations to complex
+                            responsive designs.</span>
+                    </p>
+                </div>
+                <div class="col l1"></div>
+                <div class="card col s12 m12 l4 hoverable" id="cardSub2">
+                    <center>
+                        <h5 style="text-decoration: underline;">What I'm made of</h5>
+                    </center>
+                    <p id="aboutext">I'm am a mix of a technical and artistic roots. I studied music and have a sound engineering education
+                        coupled with
+                        <span style="font-weight: bold;" class="hoverable">programming and analysis training in college</span>. I also served an eclesiastical mission for two
+                        years.
+                    </p>
+                    <br>
+                    <p id="aboutext">My journey through web development has taken me from using the
+                        <span style="font-weight: bold;" class="hoverable">MERN stack</span> to now jumping into
+                        <span style="font-weight: bold;" class="hoverable">Wordpress and Laravel</span>. I've had to learn many different disciplines through out my time and
+                        I have a tendency to not stop until a problem is solved.</p>
+                </div>
+                <div class="col l1"></div>
+                <div class="card hoverable col s12 m12 l3" id="cardSub2">
+                    <center>
+                        <h5 style="text-decoration: underline;">Value</h5>
+                    </center>
+                    <p id="aboutext">I hold a technical diploma in web development with focus on programming from Valencia College. Currently,
+                        I work at a private school as IT admin. Recently I took over as webmaster of the main school site.</p>
+                    <br>
+                    <p id="aboutext">I also work full time at Charter as tech support. I would love to focus more on the design and development
+                        side of technology. I love the creative and design aspect of the web and find this career exciting
+                        and fulfilling.</p>
+                    </p>
+                </div>
+            </div>
+            <!-- <center>
                 <ul class="tech">
                     <li>
                         <img src="assets/img/html1.jpg">
@@ -115,132 +159,145 @@
                         <p>Firebase</p>
                     </li>
                 </ul>
-            </center>
+            </center> -->
 
             <!-- <li><img src="assets/img/nodeic.png"><p>Node</p></li> -->
-            <br>
-            <br>
-            <p id="cardSub2">I hold a technical diploma in web development with focus on programming from Valencia College. Currently, I work
-                at a private school as IT admin. Recently I took over as webmaster of the main school site. I also work full
-                time at Charter as tech support. I would love to focus more on the design and developing side of technology.
-                I love the creative and design aspect of the web and find this career exciting and fulfilling.
-            </p>
+
         </section>
     </div>
     </div>
     <br>
 
     <!--Portfolio-->
-    <div class="no-padding-bottom" id="cardThree">
+    <div class="no-padding-bottom" id="cardDark">
         <div class="container">
             <center>
-                <span id="cardTitle">Portfolio</span>
-
+                <span id="cardTitle">Corkboard</span>
+                <br>
+                <br>
+                <br>
                 <!--Projects-->
-                <center>
-                    <div class="row parent">
-                        <div class="col s12 m6 child">
-                            <span class="carTitle" style="color: white;">Corkboard</span>
-                            <div class="card" style="width:150px;height:150px;">
-                                <div class="card-image">
-                                    <a href="http://corkboard2018.herokuapp.com/" target="_blank">
-                                        <img src="assets/img/wop.jpg">
-
-                                </div>
-                            </div>
-                        </div>
+                <div class="row hoverable">
+                    <div class="col s12 m12 l6">
+                        <a href="http://corkboard2018.herokuapp.com/" target="_blank">
+                            <img id="projectpics" src="assets/img/wop.jpg">
+                        </a>
                     </div>
-                    <div class="row parent">
-                        <div class="col s12 m6 child">
-                            <span class="carTitle" style="color: white;">Church</span>
-                            <div class="card" style="width:150px;height:150px;">
-                                <div class="card-image">
-                                    <a href="https://westorlandochurch.tv" target="_blank">
-                                        <img src="assets/img/woc.jpg">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col s12 m12 l6" id="projecttext">
+                        <p>Organize your resources and collaborate with your peers. How many favorites do you have in your browser?
+                            If you have ever added a favorite in your browser, you would see how un-appealing and messy your
+                            resources are stored.</p>
+                        <br>
+                        <p>With corkboard your resources are categorized depending on your preferences. It has a sleek design
+                            with a picture of the resource. Create as many boards as you want and invite friends to your
+                            board, the possibilities are endless.</p>
                     </div>
-                    <div class="row parent">
-                        <div class="col s12 m6 child">
-                            <span class="carTitle" style="color: white;">Parks</span>
-                            <div class="card" style="width:150px;height:150px;">
-                                <div class="card-image">
-                                    <a href="https://jondisla.github.io/parkfinder/" target="_blank">
-                                        <img src="assets/img/parkfinder.jpg">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </center>
+                </div>
             </center>
         </div>
         <center>
-            <a href="https://github.com/jondisla" target="_blank" class="waves-effect waves-light blue btn" id="gitbutton">GITHUB REPOS</a>
+            <ul style="margin-top: -30px;">
+                <li>
+                    <img id="projectstech" src="/assets/img/icon-mysql.png">
+                </li>
+                <li>
+                    <img id="projectstech" src="/assets/img/nodejs.png">
+                </li>
+                <li>
+                    <img id="projectstech" src="/assets/img/bootstrap.png">
+                </li>
+                <li>
+                    <img id="projectstech" src="/assets/img/express.png">
+                </li>
+            </ul>
+        </center>
+    </div>
+    <div id="card-blue">
+        <div class="container">
+            <center>
+                <span id="cardTitle">West Orlando Church</span>
+                <br>
+                <br>
+                <br>
+                <!--Projects-->
+                <div class="row hoverable">
+                    <div class="col s12 m12 l6" id="projecttext">
+                        <p>This is a website built with Wordpress for a small local business. When taking on this project I
+                            had to learn Wordpress in about a week! It has basic functionality provided by the theme as well
+                            as some image editing and scaling</p>
+                        <br>
+                        <p>With wordpress it was easy to create a calendar and a tithing functionality for church goers.</p>
+                    </div>
+                    <div class="col s12 m12 l6">
+                        <a href="https://westorlandochurch.tv" target="_blank">
+                            <img id="projectpics" src="assets/img/woc.jpg">
+                        </a>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <center>
+            <ul style="margin-top: -30px;">
+                <li>
+                    <img id="projectstech" style="display:inline;" src="/assets/img/wordpress.png">
+                </li>
+                </li>
+            </ul>
+        </center>
+    </div>
+    <div id="card-green">
+        <div class="container">
+            <center>
+                <span id="cardTitle">Park Finder</span>
+                <br>
+                <br>
+                <br>
+                <!--Projects-->
+                <div class="row hoverable">
+                    <div class="col s12 m12 l6">
+                        <a href="https://jondisla.github.io/parkfinder/" target="_blank">
+                            <img id="projectpics" src="assets/img/parkfinder.jpg">
+                        </a>
+                    </div>
+                    <div class="col s12 m12 l6" id="projecttext">
+                        <p>The goal of Park Finder is to help plan your next trip to Florida national parks. With data gathered
+                            from the national parks and google maps APIs we managed to pull off a simple yet informative
+                            app. Included is also weather information from an open weather API.</p>
+                        <br>
+                        <p>Currently the app only has data for Florida national parks. </p>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <center>
+            <ul style="margin-top: -30px;">
+                <li>
+                    <img id="projectstech" style="display:inline;" src="/assets/img/basicstack.png">
+                </li>
+                <li>
+                    <img id="projectstech" style="display:inline;" src="/assets/img/bootstrap.png">
+                </li>
+            </ul>
         </center>
     </div>
 
-    <!--APPS-->
-    <div class="col s6">
-        <div class="card   no-padding-bottom" id="cardFour">
-            <center>
-                <div class="card-content">
-                    <span id="cardTitle" style="color:white;">Applications</span>
-            </center>
-            <br>
-            <div class="container">
-                <center>
-                    <ul id="apps">
-                        <li id="cardSub1">
-                            <a id="htmlSec">
-                                <i class="fab fa-css3-alt"></i>HTML/CSS</a>
-                        </li>
-                        <li id="cardSub1">
-                            <a id="jsSec">
-                                <i class="fab fa-js-square"></i>JS Apps</a>
-                        </li>
-                        <li id="cardSub1">
-                            <a id="nodeSec">
-                                <i class="fab fa-node-js"></i>Node Apps</a>
-                        </li>
-                        <li id="cardSub1">
-                            <a id="reactSec">
-                                <i class="fab fa-react"></i>React Apps</a>
-                        </li>
-                    </ul>
-                </center>
-            </div>
-            </div>
-        </div>
-    </div>
+    <!-- </div>
+    <center>
+        <a href="https://github.com/jondisla" target="_blank" class="waves-effect waves-light blue btn" id="gitbutton">MORE ON GITHUB</a>
+    </center>
+    </div> -->
 
-    <!--Hidden HTML-->
-    <div class="col s12">
-        <div class="card   no-padding-bottom" id="allHtmlCss">
-            <center>
-                <div class="card-content">
-                    <!--close icon-->
-                    <div>
-                        <a class="closeApps">
-                            <i class="fas fa-times"></i>
-                        </a>
-                    </div>
-                    <span id="cardTitle" class="nodeTitle">HTML
-                        <br>&
-                        <br>CSS</span>
-            </center>
-            </div>
-        </div>
-    </div>
+
+
+
 
     <!--Hidden JS-->
-    <div class="col s12">
+    <!-- <div class="col s12">
         <div class="card   no-padding-bottom" id="allJsApps">
             <center>
-                <div class="card-content">
-                    <!--close icon-->
-                    <div>
+                <div class="card-content"> -->
+    <!--close icon-->
+    <!-- <div>
                         <a class="closeApps">
                             <i class="fas fa-times"></i>
                         </a>
@@ -286,127 +343,67 @@
                 </div>
                 <center>
         </div>
+    </div> -->
+
+
+    <!-- Contact Form-->
+    <div class="col s12">
+        <div class="card   no-padding-bottom" id="cardContact" style="margin-top: -20px;">
+            <center>
+                <div class="card-content">
+                    <span id="cardTitle" style="color:white;" class="contactTxt">Contact Me</span>
+            </center>
+            <br>
+            <div class="container" style="width: 50%;">
+                <form method="POST" id="form">
+                    <input id="email" type="email" name="email" placeholder="Your email" required>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                    <center>
+                        <button id="send" class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </center>
+                </form>
+                <div id="thanks"></div>
+            </div>
+            </div>
+        </div>
+        <center>
+            <p style='color: #EA6F76' ;>Powered by Materialize</p>
+        </center>
     </div>
 
-    <!--Hidden NODE-->
-    <div class="col s12">
-        <div class="card   no-padding-bottom" id="allNodeApps">
-            <center>
-                <div class="card-content nodeSubSec">
-                    <!--close-->
-                    <div>
-                        <a class="closeApps">
-                            <i class="fas fa-times"></i>
-                        </a>
-                    </div>
-                    <span id="cardTitle" class="nodeTitle">Node Apps</span>
-            </center>
-            <br>
-            <div class="container">
-                <center>
-                    <ul id="moreApps">
-                        <li class="cardSub2">
-                            <a id="liri" class="makeCursor">Liri</a>
-                            <h1 id="liriTitle">Liri</h1>
-                            <!--liri vid info and video-->
-                            <div id="liriVid">
-                                <p>Liri is a CLI request style application that uses the twitter and spotify APIs to fetch info
-                                </p>
-                                <div class="wrapper">
-                                    <video width="320" height="240" controls>
-                                        <source src="movie.mp4" type="video/mp4">
-                                </div>
-                            </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footerIcons">
+
+                <ul>
+                    <a href="https://github.com/jondisla">
+                        <li>
+                            <i class="fab fa-github"></i>
                         </li>
-                        <li class="cardSub2">
-                            <a id="bamazon" class="makeCursor">Bamazon</a>
-                            <h1 id="bamazonTitle">Bamazon</h1>
-                            <!--Show bamazon info and video-->
-                            <div id="bamazonVid">
-                                <p>Bamazon is a CLI amazon style shop that lets you purchase a product updates the stock amount
-                                </p>
-                                <!--video-->
-                                <div class="wrapper">
-                                    <video width="600" height="440" controls>
-                                        <source src="assets/videos/bamazon.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                                <!--Back button-->
-                                <p id="backNode" style="font-size: 40px;" class="makeCursor">
-                                    <i class="fas fa-arrow-circle-left"></i>BACK</p>
-                            </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jonathan-dis/">
+                        <li>
+                            <i class="fab fa-linkedin"></i>
                         </li>
-                    </ul>
-                </center>
-                <div class="arrowToPort">
-                    <center>
-                        <p id="portfolio">PORTFOLIO</p>
-                        <i class="fas fa-angle-down" id="portArrow">
-                    </center>
-                    </i>
-                </div>
-            </div>
+                    </a>
+                    <a href="https://stackexchange.com/users/12227556/jonathan-disla">
+                        <li>
+                            <i class="fab fa-stack-overflow"></i>
+                        </li>
+                    </a>
+
+                </ul>
             </div>
         </div>
-
-        <!--Contact Form-->
-        <div class="col s12">
-            <div class="card   no-padding-bottom" id="cardContact">
-                <center>
-                    <div class="card-content">
-                        <span id="cardTitle" style="color:white;" class="contactTxt">Contact Me</span>
-                </center>
-                <br>
-                <div class="container">
-                    <form method="POST" id="form">
-                        <input id="email" type="email" name="email" placeholder="Your email" required>
-                        <textarea id="message" name="message" placeholder="Your message" required></textarea>
-                        <center>
-                            <button id="send" class="btn waves-effect waves-light" type="submit" name="action">Submit
-                                <i class="material-icons right">send</i>
-                            </button>
-                        </center>
-                    </form>
-                    <div id="thanks"></div>
-                </div>
-                </div>
-            </div>
-            <center>
-                <p style='color: #EA6F76' ;>Powered by Materialize</p>
-            </center>
-        </div>
-
-        <div class="footer">
-            <div class="container">
-                <div class="footerIcons">
-
-                    <ul>
-                        <a href="https://github.com/jondisla">
-                            <li>
-                                <i class="fab fa-github"></i>
-                            </li>
-                        </a>
-                        <a href="https://www.linkedin.com/in/jonathan-dis/">
-                            <li>
-                                <i class="fab fa-linkedin"></i>
-                            </li>
-                        </a>
-                        <a href="https://stackexchange.com/users/12227556/jonathan-disla">
-                            <li>
-                                <i class="fab fa-stack-overflow"></i>
-                            </li>
-                        </a>
-
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <center>Copyright 2018 Jonathan Disla</center>
-        </div>
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="assets/app.js"></script>
+        <br>
+        <center>Copyright 2018 Jonathan Disla</center>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/app.js"></script>
 </body>
 
 </html>

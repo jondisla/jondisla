@@ -12,6 +12,10 @@ html {
   background-position: center;
 }
 
+p {
+  font-size: 20px;
+}
+
 .makeCursor {
   cursor: pointer;
 }
@@ -38,10 +42,10 @@ a:hover {
   font-family: "Homemade Apple", cursive;
 }
 
-.no-padding-bottom {
+/* .no-padding-bottom {
   padding-bottom: 90px !important;
   margin-top: 0px;
-}
+} */
 
 .navlinks {
   position: absolute;
@@ -65,22 +69,14 @@ a:hover {
   background-size: cover;
   color: white;
   background-position: center;
+  padding-top: 220px;
 }
 
 .topTitle h1 {
-  font-size: 80px;
+  margin-top: -5px;
+  font-size: 50px;
   text-align: center;
   overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em;
-  /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */
@@ -101,7 +97,7 @@ a:hover {
   to {
     border-color: transparent;
   }
-  50% {
+  100% {
     border-color: orange;
   }
 }
@@ -114,7 +110,7 @@ a:hover {
   padding-right: 250px;
   width: 200px;
   height: 200px;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .child {
@@ -131,8 +127,12 @@ a:hover {
 }
 
 #cardTitle {
-  font-size: 70px;
+  font-size: 40px;
   color: white;
+}
+
+.card-content {
+  color: rgb(65, 65, 65);
 }
 
 #cardSub {
@@ -140,57 +140,70 @@ a:hover {
   font-size: 30px;
 }
 
-/* #cardSecond {
-  background: url("/assets/img/sec2bg.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-} */
+#sec2 {}
 
-/* .tech img {
-  min-width: 500px;
-  height: 100px;
-} */
-
-#sec2 {
-  background: rgb(243, 251, 255);
+#abouttitle {
+  font-size: 35px;
 }
 
 #cardSub1 {
   margin-top: 30px;
   font-size: 20px;
-  color: white;
-}
-
-#abouttitle {
-  font-size: 40px;
 }
 
 #cardSub2 {
   margin-top: 30px;
-  font-size: 20px;
+  font-size: 18px;
+  z-index: -1;
+  background: rgb(159, 209, 232);
+  border-radius: 3%;
 }
 
-.tech img {
-  width: 30%;
+#projectpics {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  border-radius: 20px;
+  width: 300px;
+  height: 300px
 }
 
-.tech li {
-  display: inline-block;
+#projectpics:hover {
+  filter: brightness(50%);
 }
 
-#cardThree {
-  background: #111215 no-repeat;
-  /* background: url("http://paceinfonet.org/wp-content/themes/icemagtheme/plugins/LayerSlider/sampleslider/icemag-sliders/blue-background.jpg")no-repeat; */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  margin-top: -15px;
-  height: 500px;
+#projectstech {
+  margin-top: 50px;
+  width: 100px;
+}
+
+#cardDark {
+  background: #002545;
+  padding: 90px;
+}
+
+#cardDark li {
+  display: inline;
+}
+
+#card-blue {
+  background: #2B6F92;
+  padding: 90px;
+}
+
+#card-blue li {
+  display: inline;
+}
+
+#card-green li {
+  display: inline;
+}
+
+#card-green {
+  background: #456356;
+  padding: 90px;
 }
 
 #cardContact {
@@ -201,7 +214,7 @@ a:hover {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  margin-top: -39px;
+  /* margin-top: -39px; */
 }
 
 /*APPS*/
@@ -211,7 +224,7 @@ a:hover {
   cursor: pointer;
 }
 
-#apps li:hover {
+#apps li {
   color: rgb(57, 57, 138);
   cursor: pointer;
 }
@@ -255,76 +268,6 @@ a:hover {
 
 .cardSub2 {
   color: white;
-}
-
-/*functionality js apps*/
-
-/*////////////JS/////////////////*/
-
-#allHtmlCss {
-  display: none;
-  background: url("/assets/img/html-css.png") no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  margin-top: -20px;
-}
-
-#allJsApps {
-  display: none;
-  background: url("/assets/img/jsbg.png") no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  margin-top: -20px;
-  height: 700px;
-}
-
-/*////////////Node/////////////////*/
-
-#allNodeApps {
-  display: none;
-  background-color: black;
-  background: url("/assets/img/nodebg.png") no-repeat;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  background-position: center;
-  margin-top: -20px;
-}
-
-#liriVid {
-  display: none;
-}
-
-#bamazon,
-#liri {
-  font-size: 40px;
-}
-
-#bamazonTitle {
-  display: none;
-}
-
-#bamazonVid {
-  display: none;
-}
-
-/* #portfolio {
-  display: none;
-} */
-
-.arrowToPort {
-  font-size: 20px;
-  position: absolute;
-  margin-left: 31%;
-  bottom: 0;
-  color: #84ce24;
 }
 
 /*Contact*/
@@ -375,7 +318,40 @@ textarea {
   padding-right: 10px;
 }
 
+#projecttext {
+  color: white;
+  font-size: 20px;
+}
+
 /*Media queries*/
+
+@media only screen and (min-width: 660px) {
+  .topTitle h1 {
+    /* background: yellow; */
+    /* width: 50%; */
+    font-size: 50px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  #projectpics {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 573px) {
+  #projectpics {
+    width: 150px;
+    height: 150px;
+  }
+}
 
 @media only screen and (max-width: 360px) {
   #topTitle {
