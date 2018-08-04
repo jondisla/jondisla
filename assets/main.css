@@ -214,7 +214,7 @@ a:hover {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  /* margin-top: -39px; */
+  margin-top: -35px;
 }
 
 /*APPS*/
@@ -271,7 +271,9 @@ a:hover {
 }
 
 /*Contact*/
-
+#gitbutton{
+  margin-top: -48px;
+}
 #cardFour {
   background: #5d93b6;
   background-position: center;
