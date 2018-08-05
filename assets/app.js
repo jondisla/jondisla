@@ -116,22 +116,22 @@ $(document).ready(function () {
 
 
     //contact
-    $('#form').submit((e) => {
-        $('.contactTxt').hide();
-        $('#form').hide();
-        $('#thanks').show();
-        $.ajax({
-            url: "https://formspree.io/contact@jondisla.com",
-            method: "POST",
-            data: {
-                email: $('#email').val(),
-                message: $('#message').val()
-            },
-            dataType: "json"
-        });
-    });
+    // $('#form').submit((e) => {
+    //     $('.contactTxt').hide();
+    //     $('#form').hide();
+    //     $('#thanks').show();
+    //     $.ajax({
+    //         url: "https://formspree.io/contact@jondisla.com",
+    //         method: "POST",
+    //         data: {
+    //             email: $('#email').val(),
+    //             message: $('#message').val()
+    //         },
+    //         dataType: "json"
+    //     });
+    // });
 
-    $('#thanks').append('Thank You for your submission!');
+    // $('#thanks').append('Thank You for your submission!');
 
 
 
