@@ -270,12 +270,15 @@
             </center>
         </div>
         <center>
-            <ul style="margin-top: -30px;">
+            <ul style="margin-top: -30px;" class="s12 m12 l12">
                 <li>
                     <img id="projectstech" style="display:inline;" src="/assets/img/basicstack.png">
                 </li>
                 <li>
-                    <img id="projectstech" style="display:inline;" src="/assets/img/bootstrap.png">
+                    <img id="projectstech" style="display:inline;" src="/assets/img/materialize.png">
+                </li>
+                <li>
+                    <img id="projectstech" style="display:inline;" src="/assets/img/firebase.png">
                 </li>
             </ul>
         </center>
@@ -355,10 +358,11 @@
             </center>
             <br>
             <div class="container" style="width: 50%;">
-                <form method="POST" id="form">
+                <form action="https://formspree.io/jon.disla@gmail.com" method="POST" id="form">
                     <input id="email" type="email" name="email" placeholder="Your email" required>
                     <textarea id="message" name="message" placeholder="Your message" required></textarea>
                     <center>
+                            <input type="hidden" name="_next" value="http://jondisla.com/thanks.html" />
                         <button id="send" class="btn waves-effect waves-light" type="submit" name="action">Submit
                             <i class="material-icons right">send</i>
                         </button>

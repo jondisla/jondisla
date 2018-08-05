@@ -117,7 +117,6 @@ $(document).ready(function () {
 
     //contact
     $('#form').submit((e) => {
-        e.preventDefault();
         $('.contactTxt').hide();
         $('#form').hide();
         $('#thanks').show();
