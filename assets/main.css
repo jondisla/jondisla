@@ -140,8 +140,6 @@ a:hover {
   font-size: 30px;
 }
 
-#sec2 {}
-
 #abouttitle {
   font-size: 35px;
 }
@@ -156,6 +154,15 @@ a:hover {
   font-size: 18px;
   z-index: -1;
   background: rgb(159, 209, 232);
+  border-radius: 3%;
+}
+
+#cardSub3 {
+  margin-top: 30px;
+  font-size: 18px;
+  z-index: -1;
+  /* background: rgb(159, 209, 232); */
+  color: white;
   border-radius: 3%;
 }
 
@@ -181,20 +188,26 @@ a:hover {
 
 #cardDark {
   background: #002545;
-  padding: 90px;
 }
 
 #cardDark li {
   display: inline;
 }
 
+#cardDark p {
+  color: white;
+}
+
 #card-blue {
   background: #2B6F92;
-  padding: 90px;
 }
 
 #card-blue li {
   display: inline;
+}
+
+#card-blue p {
+  color: white;
 }
 
 #card-green li {
@@ -203,7 +216,10 @@ a:hover {
 
 #card-green {
   background: #456356;
-  padding: 90px;
+}
+
+#card-green p {
+  color: white;
 }
 
 #cardContact {
@@ -215,6 +231,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   margin-top: -35px;
+  padding-bottom: 30px;
 }
 
 /*APPS*/
@@ -256,24 +273,16 @@ a:hover {
   filter: brightness(100%);
 }
 
-/* #allApps{
-    
-}
-
-#moreApps{
-}
-
-#moreApps li{
-} */
-
 .cardSub2 {
   color: white;
 }
 
 /*Contact*/
-#gitbutton{
+
+#gitbutton {
   margin-top: -48px;
 }
+
 #cardFour {
   background: #5d93b6;
   background-position: center;
@@ -283,6 +292,7 @@ a:hover {
 #form {
   background: white;
   border-radius: 10px;
+  margin-top: -30px;
 }
 
 textarea {
@@ -387,6 +397,15 @@ textarea {
   .child {
     width: 50%;
     height: 20%;
+  }
+  #projecttext {
+    background: #002545
+  }
+  #projecttext p {
+    font-size: 70%;
+  }
+  #projectstech {
+    width: 20%;
   }
 }
 
