@@ -134,7 +134,6 @@ $(document).ready(function () {
     // $('#thanks').append('Thank You for your submission!');
 
 
-
-
+    $('.modal').modal();
 
 });

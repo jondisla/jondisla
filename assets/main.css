@@ -33,7 +33,6 @@ a:hover {
 }
 
 /*Navigation*/
-
 #topBar {
   background: rgb(92, 149, 185);
 }
@@ -46,7 +45,6 @@ a:hover {
   padding-bottom: 90px !important;
   margin-top: 0px;
 } */
-
 .navlinks {
   position: absolute;
   right: 0;
@@ -54,7 +52,6 @@ a:hover {
 }
 
 /*Top section*/
-
 #roundedimg {
   border-radius: 50%;
   width: 200px;
@@ -85,23 +82,24 @@ a:hover {
 }
 
 /* The typing effect */
-
 @keyframes typing {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
 }
 
 /* The typewriter cursor effect */
-
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   100% {
     border-color: orange;
   }
@@ -203,6 +201,18 @@ a:hover {
   color: white;
 }
 
+#card-red {
+  background: rgb(255, 119, 0);
+}
+
+#card-red li {
+  display: inline;
+}
+
+#card-red p {
+  color: white;
+}
+
 #card-blue {
   background: #2B6F92;
 }
@@ -240,7 +250,6 @@ a:hover {
 }
 
 /*APPS*/
-
 #apps li a {
   text-decoration: none;
   cursor: pointer;
@@ -252,7 +261,6 @@ a:hover {
 }
 
 /*//////////////Responsive vid/////////////*/
-
 .wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -270,7 +278,6 @@ a:hover {
 }
 
 /*allAPPS*/
-
 .closeApps {
   color: rgb(126, 1, 9);
   font-size: 40px;
@@ -283,7 +290,6 @@ a:hover {
 }
 
 /*Contact*/
-
 #gitbutton {
   margin-top: -48px;
 }
@@ -309,7 +315,6 @@ textarea {
 }
 
 /*footer*/
-
 .footer {
   background: #111215;
   bottom: 0;
@@ -341,7 +346,6 @@ textarea {
 }
 
 /*Media queries*/
-
 @media only screen and (min-width: 660px) {
   .topTitle h1 {
     /* background: yellow; */
@@ -357,6 +361,7 @@ textarea {
     /* Adjust as needed */
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
   }
+
   #projectpics {
     width: 300px;
     height: 300px;
@@ -374,18 +379,23 @@ textarea {
   #topTitle {
     font-size: 300%;
   }
+
   #topSub {
     font-size: 100%;
   }
+
   #roundedimg {
     width: 50%;
   }
+
   #cardTitle {
     font-size: 300%;
   }
+
   #cardSub {
     font-size: 100%;
   }
+
   /* li{
         position: absolute;
         display: inline-block;
@@ -396,19 +406,24 @@ textarea {
     display: inline-block;
     margin-top: 15%;
   }
+
   .tech img {
     width: 50%;
   }
+
   .child {
     width: 50%;
     height: 20%;
   }
+
   #projecttext {
     background: #002545
   }
+
   #projecttext p {
     font-size: 70%;
   }
+
   #projectstech {
     width: 20%;
   }
