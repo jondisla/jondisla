@@ -10,29 +10,29 @@ $(document).ready(function () {
     $('#about').click(function (e) {
         e.preventDefault()
         $('html, body').animate({
-            scrollTop: $("#cardSecond").offset().top
+            scrollTop: $(".aboutSec").offset().top
         }, 2000);
     });
 
-    $('#apps').click(function (e) {
-        e.preventDefault()
-        $('html, body').animate({
-            scrollTop: $("#cardFour").offset().top
-        }, 2000);
-    });
+    // $('#apps').click(function (e) {
+    //     e.preventDefault()
+    //     $('html, body').animate({
+    //         scrollTop: $("#cardFour").offset().top
+    //     }, 2000);
+    // });
 
 
     $('#portfolio').click(function (e) {
         e.preventDefault()
         $('html, body').animate({
-            scrollTop: $("#cardThree").offset().top
+            scrollTop: $("#card-red").offset().top
         }, 2000);
     });
 
     $('#contact').click(function (e) {
         e.preventDefault()
         $('html, body').animate({
-            scrollTop: $("#cardFour").offset().top
+            scrollTop: $("#cardContact").offset().top
         }, 2000);
     });
 
