@@ -25,7 +25,7 @@ $(document).ready(function () {
     $('#portfolio').click(function (e) {
         e.preventDefault()
         $('html, body').animate({
-            scrollTop: $("#card-red").offset().top
+            scrollTop: $(".portfolioSec").offset().top
         }, 2000);
     });
 

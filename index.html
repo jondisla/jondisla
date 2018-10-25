@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
         crossorigin="anonymous">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 
     <link rel="stylesheet" href="assets/main.css">
@@ -26,7 +29,7 @@
 
         <div class="nav-wrapper" id="topBar">
             <div class="container">
-                <a href="index.html" class="brand-logo hoverable">Jon Disla</a>
+                <a href="index.html" class="brand-logo hoverable animated  rubberBand delay-1s">Jon Disla</a>
                 <ul class="right hide-on-med-and-down">
                     <li id="about">
                         <a>About</a>
@@ -34,9 +37,9 @@
                     <li id="portfolio">
                         <a>Portfolio</a>
                     </li>
-                    <!-- <li id="apps">
-                        <a>Apps</a>
-                    </li> -->
+                    <li id="apps">
+                        <a>Concepts</a>
+                    </li>
                     <li id="contact">
                         <a>Contact</a>
                     </li>
@@ -57,20 +60,18 @@
                     <p id="topSub">A passionate
                         <strong>Web Developer</strong> from the US.</p>
                     <p id="topSub">Building web solutions is my goal and I love everything about it.</p>
-                    <img id="roundedimg" src="assets/img/jd.jpg" class="hoverable">
+                    <img class="animated fadeIn delay-0s" id="roundedimg" src="assets/img/jd.jpg" class="hoverable">
                 </center>
             </div>
         </div>
     </div>
 
     <!--About me-->
-    <!-- <div class="col s12">-->
-    <!-- <div class="card no-padding-bottom hoverable" id="cardSecond"> -->
     <div class="card-content container aboutSec">
         <center>
             <span id="abouttitle">A little about me</span>
         </center>
-        <section>
+        <section data-aos="fade-in">
             <div class="row">
                 <div class="card col s12 m12 l3 hoverable" id="cardSub2">
                     <center>
@@ -130,9 +131,10 @@
     </div>
     </div>
     <br>
-    <!--Corkboard-->
-    <div class="no-padding-bottom" id="cardDark" style="background:rgb(199, 75, 75);">
-        <div class="container">
+    <!--PORTFOLIO-->
+
+    <div class="no-padding-bottom portfolioSec" id="cardDark" style="background:rgb(199, 75, 75);">
+        <div class="container" data-aos="fade-in">
             <center>
                 <span id="cardTitle">PlanIt</span>
                 <br>
@@ -146,7 +148,7 @@
                             <img id="projectpics" src="assets/img/planit.png">
                         </a>
                     </div>
-                    <div class="col s12 m12 l6">
+                    <div class="col s12 m12 l6" data-aos="fade-in">
                         <p>Planit&copy; is the brainchild of a teacher/principal that aims to
                             provide a free resource for in-class lesson and activities.</p>
                         <br>
@@ -161,7 +163,7 @@
             </center>
         </div>
         <center>
-            <ul style="margin-top: -30px;">
+            <ul style="margin-top: -30px;" data-aos="flip-up" data-aos-duration="2000">
                 <li>
                     <img id="projectstech" src="/assets/img/basicstack.png">
                 </li>
@@ -180,7 +182,7 @@
 
     <!-- //////ESTORE -->
     <div id="card-red">
-        <div class="container">
+        <div class="container" data-aos="fade-in" data-aos-duration="1000">
             <center>
                 <span id="cardTitle">The Eshop</span>
                 <br>
@@ -204,7 +206,7 @@
                     </div>
                 </div>
                 <center>
-                    <ul style="margin-top: -30px;">
+                    <ul style="margin-top: -30px;" data-aos="flip-up" data-aos-duration="2000">
                         <li>
                             <img id="projectstech" style="display:inline;" src="/assets/img/wordpress.png">
                         </li>
@@ -314,7 +316,7 @@
     </div>
     <!--Corkboard-->
     <div class="no-padding-bottom" id="cardDark">
-        <div class="container">
+        <div class="container" data-aos="fade-in" data-aos-duration="1000">
             <center>
                 <span id="cardTitle">Corkboard</span>
                 <br>
@@ -349,7 +351,7 @@
             </center>
         </div>
         <center>
-            <ul style="margin-top: -30px;">
+            <ul style="margin-top: -30px;" data-aos="flip-up" data-aos-duration="2000">
                 <li>
                     <img id="projectstech" src="/assets/img/icon-mysql.png">
                 </li>
@@ -368,7 +370,7 @@
 
     <!-- PARK FINDER -->
     <div id="card-green">
-        <div class="container">
+        <div class="container" data-aos="fade-in" data-aos-duration="1000">
             <center>
                 <span id="cardTitle">Park Finder</span>
                 <br>
@@ -394,7 +396,8 @@
             </center>
         </div>
         <center>
-            <ul style="margin-top: -60px;padding-bottom: 40px;" class="s12 m12 l12">
+            <ul style="margin-top: -60px;padding-bottom: 40px;" class="s12 m12 l12" data-aos="flip-up"
+                data-aos-duration="2000">
                 <li>
                     <img id="projectstech" style="display:inline;" src="/assets/img/basicstack.png">
                 </li>
@@ -409,7 +412,7 @@
     </div>
     <!-- CHURCH///////// -->
     <div id="card-blue">
-        <div class="container">
+        <div class="container" data-aos="fade-in" data-aos-duration="1000">
             <center>
                 <span id="cardTitle">West Orlando Church</span>
                 <br>
@@ -436,10 +439,9 @@
             </center>
         </div>
         <center>
-            <ul style="margin-top: -30px;">
+            <ul style="margin-top: -30px;" data-aos="flip-up" data-aos-duration="2000">
                 <li>
                     <img id="projectstech" style="display:inline;" src="/assets/img/wordpress.png">
-                </li>
                 </li>
             </ul>
         </center>
@@ -514,8 +516,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="assets/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-
+        AOS.init();
     </script>
 </body>
 

@@ -41,6 +41,10 @@ a:hover {
   font-family: "Homemade Apple", cursive;
 }
 
+.nav-wrapper {
+  z-index: 1;
+}
+
 /* .no-padding-bottom {
   padding-bottom: 90px !important;
   margin-top: 0px;
@@ -291,7 +295,7 @@ a:hover {
 
 /*Contact*/
 #gitbutton {
-  margin-top: -48px;
+  display: none;
 }
 
 #cardFour {
