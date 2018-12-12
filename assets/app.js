@@ -7,7 +7,7 @@ $(document).ready(function () {
         console.log('hello')
     })
 
-    $('#about').click(function (e) {
+    $('#about, #downArrow').click(function (e) {
         e.preventDefault()
         $('html, body').animate({
             scrollTop: $(".aboutSec").offset().top
@@ -20,6 +20,7 @@ $(document).ready(function () {
     //         scrollTop: $("#cardFour").offset().top
     //     }, 2000);
     // });
+
 
 
     $('#portfolio').click(function (e) {
@@ -135,5 +136,31 @@ $(document).ready(function () {
 
 
     $('.modal').modal();
+
+    //Dynamically create the bg for the down arrow
+    var topcontents = document.getElementById("topcontents")
+    var downArrow = document.querySelector('#downArrow')
+    var arrow = document.createElement("div")
+    arrow.classList.add("arrowBg")
+    topcontents.appendChild(arrow);
+    arrow.appendChild(downArrow);
+
+    //animate css arrow on hover
+    $(".arrowBg").hover(
+        function () {
+            $(this).addClass('animated  pulse')
+        },
+        function () {
+            $(this).removeClass('animated pulse')
+        }
+    )
+    $("#downArrow").hover(
+        function () {
+            $(this).addClass('animated  heartBeat')
+        },
+        function () {
+            $(this).removeClass('animated heartBeat')
+        }
+    )
 
 });
