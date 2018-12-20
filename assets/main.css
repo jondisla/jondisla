@@ -38,7 +38,34 @@ a:hover {
 }
 
 .brand-logo {
-  font-family: "Homemade Apple", cursive;
+  width: 80px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.brand-logo img {
+  /* font-family: "Homemade Apple", cursive; */
+  width: 100px;
+  /* position: absolute; */
+  margin-top: -20px;
+  margin-left: -50px;
+}
+
+.brand-logo img:hover {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -59px;
+    /* width: 300%; */
+  }
+
+  to {
+    /* margin-left: 0%; */
+    width: -59px;
+  }
 }
 
 .nav-wrapper {
