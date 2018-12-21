@@ -51,23 +51,6 @@ a:hover {
   margin-left: -50px;
 }
 
-.brand-logo img:hover {
-  animation-duration: 2s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: -59px;
-    /* width: 300%; */
-  }
-
-  to {
-    /* margin-left: 0%; */
-    width: -59px;
-  }
-}
-
 .nav-wrapper {
   z-index: 1;
 }
@@ -168,13 +151,20 @@ a:hover {
   color: white;
 }
 
+.welcome {
+  position: absolute;
+  left: 45%;
+  /* margin-top: 250px; */
+  bottom: 120px;
+}
+
 .arrowBg {
   background: rgba(0, 0, 0, 0.296);
   border-radius: 50%;
   width: 100px;
   height: 100px;
   position: absolute;
-  left: 50%;
+  left: 46%;
   text-align: center;
   bottom: 0;
 }
@@ -437,6 +427,18 @@ textarea {
   #projectpics {
     width: 150px;
     height: 150px;
+  }
+
+  #topSub {
+    font-size: 20px;
+  }
+
+  .welcome {
+    left: 35%;
+  }
+
+  .arrowBg {
+    left: 38%;
   }
 }
 
