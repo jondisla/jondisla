@@ -1,3 +1,20 @@
+<?php
+
+if(isset($_POST['submit'])){
+    $name = $_POST['name'];
+    $mail = $_POST['mail'];
+    $message = $_POST['message'];
+
+    $mailTo="contact@johndisla.com";
+    $headers = "From: ".$mail;
+    $txt = "You have received an email from ".$name.".\n\n".$message;
+
+    mail($mailTo, $txt, $headers);
+    header("Locaition: index.php?mailsend");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,7 +95,7 @@
                 </div>
                 <center>
                     <!-- <img class="animated fadeIn delay-0s" id="roundedimg" src="assets/img/jd.jpg" class="hoverable"> -->
-                    <div class="welcome">Check out my work</div>
+                    <!-- <div class="welcome">Check out my work</div> -->
                     <i class="fas fa-chevron-down" id="downArrow"></i>
                 </center>
             </div>

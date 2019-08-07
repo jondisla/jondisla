@@ -108,7 +108,7 @@ a:hover {
 /* FEATURED */
 
 .featured {
-  background: rgba(0, 0, 255, 0);
+  background: transparent;
   width: 50%;
   height: 400px;
   margin: 10px 0;
@@ -208,6 +208,7 @@ a:hover {
   left: 46%;
   text-align: center;
   bottom: 0;
+  display: none;
 }
 
 #downArrow {
@@ -466,6 +467,7 @@ textarea {
 
 /*Media queries*/
 @media only screen and (min-width: 660px) {
+
   .topTitle h1 {
     /* background: yellow; */
     /* width: 50%; */
@@ -497,6 +499,10 @@ textarea {
 }
 
 @media only screen and (max-width: 573px) {
+  .arrowBg {
+    display: none;
+  }
+
   #projectpics {
     width: 150px;
     height: 150px;
@@ -510,12 +516,13 @@ textarea {
     left: 35%;
   }
 
-  .arrowBg {
-    left: 38%;
-  }
 }
 
 @media only screen and (max-width: 360px) {
+  .arrowBg {
+    display: none;
+  }
+
   #topTitle {
     font-size: 300%;
   }
