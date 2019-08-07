@@ -67,7 +67,10 @@ a:hover {
 }
 
 .links {
-  width: 320px;
+  width: 336px;
+  position: absolute;
+  right: 0;
+
 }
 
 
