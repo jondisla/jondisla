@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+        integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <!-- animate css -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -40,8 +40,10 @@
                     <li id="portfolio">
                         <a>Portfolio</a>
                     </li>
-                    <a href="https://www.buildisite.com"><li id="contact">
-                        Contact</a>
+                    <a href="https://www.buildisite.com">
+                        <li id="contact">
+                            Contact
+                    </a>
                     </li>
                 </ul>
             </div>
@@ -60,6 +62,14 @@
                     <p id="topSub">A passionate
                         <strong>Web Developer</strong> from the US.</p>
                     <p id="topSub">Building web solutions is my goal and I love everything about it.</p>
+                </center>
+                <div class="featured">
+                    <h4>Featured Code Along</h4>
+                    <p>In this code along, I go step by step in creating a basic html and css front end design.</p>
+                    <iframe width="420" height="215" src="https://www.youtube.com/embed/Y5SwWhEXR5M">
+                    </iframe>
+                </div>
+                <center>
                     <!-- <img class="animated fadeIn delay-0s" id="roundedimg" src="assets/img/jd.jpg" class="hoverable"> -->
                     <div class="welcome">Check out my work</div>
                     <i class="fas fa-chevron-down" id="downArrow"></i>
@@ -98,7 +108,8 @@
                     <p id="aboutext">I'm am a mix of a technical and artistic roots. I studied music and have a sound
                         engineering education
                         coupled with
-                        <span style="font-weight: bold;" class="hoverable">programming and analysis training in college</span>.
+                        <span style="font-weight: bold;" class="hoverable">programming and analysis training in
+                            college</span>.
                         I also served an eclesiastical mission for two
                         years.
                     </p>
@@ -115,7 +126,8 @@
                         <h5 style="text-decoration: underline;">Value</h5>
                     </center>
                     <p id="aboutext">I hold a technical diploma in web development with focus on programming from
-                        Valencia College. Have done some work as Admin. Recently I took over as webmaster of the main school
+                        Valencia College. Have done some work as Admin. Recently I took over as webmaster of the main
+                        school
                         site.</p>
                     <br>
                     <p id="aboutext">I work in tech support currently but would love to focus more on
@@ -180,40 +192,40 @@
     </div>
 
     <!-- //////ESTORE -->
-    <div id="card-red">
+    <div id="card-white">
         <div class="container" data-aos="fade-in" data-aos-duration="1000">
             <center>
-                <span id="cardTitle">The Eshop</span>
+                <span id="cardTitle">Plan My Day</span>
                 <br>
                 <br>
                 <br>
                 <!--Projects-->
                 <div class="row hoverable">
                     <div class="col s12 m12 l6">
-                        <p>An E-commerce website for a local print shop. This store will facilitate the client to
-                            business relationship by making it easier to buy online instead of just going to the store.
-
-                            This site was built using the latest WooCommerce plugins, logo design and development
-                            language.</p>
+                        <p>Simple todo app using PHP to perform CRUD operation with MySql. The front end is html, Sass
+                            and Javascript.</p>
                         <br>
-                        <p>Improved the over all look and feel of the old website.</p>
+                        <p>Features adding, editing and removing tasks.</p>
                     </div>
                     <div class="col s12 m12 l6">
-                        <a class="modal-trigger" href="#modal1">
-                            <img id="projectpics" src="assets/img/eshop/eshopfont.png">
+                        <a href="https://planmyday.johndisla.com" target="_blank">
+                            <img id="projectpics" src="assets/img/planmyday.png">
                         </a>
                     </div>
                 </div>
                 <center>
                     <ul style="margin-top: -30px;" data-aos="flip-up" data-aos-duration="2000">
                         <li>
-                            <img id="projectstech" style="display:inline;" src="assets/img/wordpress.png">
+                            <img id="projectstech" src="assets/img/basicstack.png">
                         </li>
                         <li>
-                            <img id="projectstech" style="display:inline;" src="assets/img/woo.png">
+                            <img id="projectstech" src="assets/img/bootstrap.png">
                         </li>
                         <li>
-                            <img id="projectstech" style="display:inline;" src="assets/img/mailchimp.png">
+                            <img id="projectstech" src="assets/img/php.png">
+                        </li>
+                        <li>
+                            <img id="projectstech" src="assets/img/icon-mysql.png">
                         </li>
                     </ul>
                 </center>
@@ -449,7 +461,8 @@
 
     </div>
     <center>
-        <a href="https://github.com/jondisla" target="_blank" class="waves-effect waves-light blue btn" id="gitbutton">MORE
+        <a href="https://github.com/jondisla" target="_blank" class="waves-effect waves-light blue btn"
+            id="gitbutton">MORE
             ON GITHUB</a>
     </center>
     </div>
@@ -457,7 +470,7 @@
 
     <!-- Contact Form-->
     <div class="col s12">
-<!--         <div class="card   no-padding-bottom" id="cardContact">
+        <!--         <div class="card   no-padding-bottom" id="cardContact">
             <center>
                 <div class="card-content">
                     <span id="cardTitle" style="color:white;" class="contactTxt">Contact Me</span>
@@ -477,8 +490,9 @@
                 </form>
                 <div id="thanks"></div>
             </div> -->
-        <center><a href="https://www.buildisite.com"><button class = "btn waves-effect waves-light">Contact Me</button></a></center>
-        </div>
+        <center><a href="https://www.buildisite.com"><button class="btn waves-effect waves-light">Contact
+                    Me</button></a></center>
+    </div>
     </div>
     <center>
         <p style='color: #EA6F76' ;>Powered by Materialize</p>
