@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="assets/main.css">
 
-    <title>Jon Disla</title>
+    <title>John Disla</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                 <a href="index.html" class="brand-logo  animated  bounceInDown "><img src="assets/img/logo3.png"></a>
                 <ul class="links right hide-on-med-and-down">
                     <li id="apps">
-                        <a href="blog.html">Blog</a>
+                        <a href="https://buildisite.com/blog-site/">Blog</a>
                     </li>
                     <li id="about">
                         <a>About</a>
@@ -40,7 +40,7 @@
                     <li id="portfolio">
                         <a>Portfolio</a>
                     </li>
-                    <a href="https://www.buildisite.com">
+                    <a href="#modal1" class="modal-trigger">
                         <li id="contact">
                             Contact
                     </a>
@@ -57,17 +57,24 @@
             <div id="topcontents">
                 <center>
                     <span class="topTitle">
-                        <h1>Hello, I'm Jon Disla</h1>
+                        <h1>Hey, John Disla here...</h1>
                     </span>
-                    <p id="topSub">A passionate
+                    <p id="topSub">Passionate
                         <strong>Web Developer</strong> from the US.</p>
                     <p id="topSub">Building web solutions is my goal and I love everything about it.</p>
                 </center>
-                <div class="featured">
-                    <h4>Featured Code Along</h4>
-                    <p>In this code along, I go step by step in creating a basic html and css front end design.</p>
-                    <iframe width="420" height="215" src="https://www.youtube.com/embed/Y5SwWhEXR5M">
-                    </iframe>
+                <div class="row">
+                    <center>
+                        <h4>Featured Code Along</h4>
+                    </center>
+                    <div class="card col s12 m12 l12 hoverable featured">
+                        <iframe width="420" height="215" src="https://www.youtube.com/embed/Y5SwWhEXR5M">
+                        </iframe>
+                    </div>
+                    <!-- <div class="card col s12 m12 l5 hoverable featured">
+                        <h4>Featured Code Along</h4>
+                        <p>In this code along, I go step by step in creating a basic html and css front end design.</p>
+                    </div> -->
                 </div>
                 <center>
                     <!-- <img class="animated fadeIn delay-0s" id="roundedimg" src="assets/img/jd.jpg" class="hoverable"> -->
@@ -229,99 +236,6 @@
                         </li>
                     </ul>
                 </center>
-                <!-- Modal Structure -->
-                <div id="modal1" class="modal">
-                    <div class="modal-content">
-                        <h4>The Eshop</h4>
-                        <div class="row">
-                            <div class="col s12 m12">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <h5>Home Page</h5>
-                                    </div>
-                                    <div class="card-image">
-                                        <img src="assets/img/eshop/eshopfont.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s12 m12">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <h5>Simple Product</h5>
-                                    </div>
-                                    <div class="card-image">
-                                        <img src="assets/img/eshop/eshop1.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s12 m12">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <h5>Accessory Product</h5>
-                                    </div>
-                                    <div class="card-image">
-                                        <img src="assets/img/eshop/eshop2.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s12 m12">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <h5>Variable Product</h5>
-                                    </div>
-                                    <div class="card-image">
-                                        <img src="assets/img/eshop/eshop3.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s12 m12">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <h5>Shopping Cart</h5>
-                                    </div>
-                                    <div class="card-image">
-                                        <img src="assets/img/eshop/eshopcart.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s12 m12">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <h5>Reviews</h5>
-                                    </div>
-                                    <div class="card-image">
-                                        <img src="assets/img/eshop/eshoprev.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s12 m12">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <h5>Quote</h5>
-                                    </div>
-                                    <div class="card-image">
-                                        <img src="assets/img/eshop/eshopquote.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">CLOSE</a>
-                    </div>
-                </div>
         </div>
         </center>
     </div>
@@ -490,9 +404,42 @@
                 </form>
                 <div id="thanks"></div>
             </div> -->
-        <center><a href="https://www.buildisite.com"><button class="btn waves-effect waves-light">Contact
-                    Me</button></a></center>
     </div>
+    <!-- Modal Trigger -->
+    <center><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Contact me</a></center>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <center>
+                <h4>Let's talk</h4>
+            </center><br>
+            <div class="row">
+                <form action="contact-form.php" method="POST" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6 l6">
+                            <input id="name" type="text" class="validate">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 l6">
+                                <input id="email" type="email" class="validate">
+                                <label for="mail">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="message" class="materialize-textarea"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="modal-close waves-effect waves-green btn-flat">SUBMIT</a>
+        </div>
+        </form>
     </div>
     <center>
         <p style='color: #EA6F76' ;>Powered by Materialize</p>
@@ -524,7 +471,7 @@
             </div>
         </div>
         <br>
-        <center>Copyright 2018 Jonathan Disla</center>
+        <center>Copyright 2019 johndisla.com &copy</center>
     </div>
     <!-- Compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

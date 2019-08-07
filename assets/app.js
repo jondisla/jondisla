@@ -30,12 +30,12 @@ $(document).ready(function () {
         }, 2000);
     });
 
-    $('#contact').click(function (e) {
-        e.preventDefault()
-        $('html, body').animate({
-            scrollTop: $("#cardContact").offset().top
-        }, 2000);
-    });
+    // $('#contact').click(function (e) {
+    //     e.preventDefault()
+    //     $('html, body').animate({
+    //         scrollTop: $("#cardContact").offset().top
+    //     }, 2000);
+    // });
 
     //Open links in new tab
 

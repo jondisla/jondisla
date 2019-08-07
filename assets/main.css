@@ -102,17 +102,38 @@ a:hover {
   overflow: hidden;
 }
 
+/* FEATURED */
+
 .featured {
-  background: rgba(0, 0, 255, 0.269);
+  background: rgba(0, 0, 255, 0);
   width: 50%;
   height: 400px;
   margin: 10px 0;
   text-align: center;
   border-radius: 20px;
+  margin: 0px 30px;
 }
 
+/*
 .featured h4 {
   padding: 20px;
+} */
+
+/* .featured {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+} */
+
+.featured iframe {
+  border: transparent;
+  border-radius: 20px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /* The typing effect */
@@ -140,7 +161,7 @@ a:hover {
 }
 
 #topSub {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .parent {
@@ -407,6 +428,38 @@ textarea {
   color: white;
   font-size: 20px;
 }
+
+#modal1 {
+  background: #5b95b9;
+  color: white;
+}
+
+form {
+  color: white;
+}
+
+input,
+textarea {
+  color: white !important;
+}
+
+.input-field label {
+  color: white;
+}
+
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid rgb(255, 233, 233);
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus+label {
+  color: #000;
+}
+
+
 
 /*Media queries*/
 @media only screen and (min-width: 660px) {
