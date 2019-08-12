@@ -208,7 +208,7 @@ a:hover {
   left: 46%;
   text-align: center;
   bottom: 0;
-  display: none;
+  display:none;
 }
 
 #downArrow {
@@ -467,6 +467,9 @@ textarea {
 
 /*Media queries*/
 @media only screen and (min-width: 660px) {
+#resume{
+display:block;
+}
 
   .topTitle h1 {
     /* background: yellow; */
