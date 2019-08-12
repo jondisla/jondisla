@@ -2,6 +2,7 @@
 
 if(isset($_POST['submit'])){
     $name = $_POST['name'];
+    $subject = $_POST['subject'];
     $mail = $_POST['mail'];
     $message = $_POST['message'];
 
@@ -9,7 +10,7 @@ if(isset($_POST['submit'])){
     $headers = "From: ".$mail;
     $txt = "You have received an email from ".$name.".\n\n".$message;
 
-    mail($mailTo, $txt, $headers);
+    mail($mailTo, $subject, $txt, $headers);
     header("Locaition: index.php?mailsend");
 }
 
@@ -34,7 +35,7 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 
-    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/main2.css">
 
     <title>John Disla</title>
 </head>
@@ -45,11 +46,14 @@ if(isset($_POST['submit'])){
     <nav style="position: fixed;z-index: 1;">
 
         <div class="nav-wrapper" id="topBar">
+        <span style="position:absolute;left:20px;background:#337E95;padding:0px 10px;"><a href="johndislaresume.html">View Resume</a></span>
             <div class="container">
-                <a href="index.html" class="brand-logo  animated  bounceInDown "><img src="assets/img/logo3.png"></a>
+            
+                <a href="index.php" class="brand-logo  animated  bounceInDown "><img src="assets/img/logo3.png"></a>
+                
                 <ul class="links right hide-on-med-and-down">
-                    <li id="apps">
-                        <a href="https://buildisite.com/blog-site/">Blog</a>
+                    <li id="resume">
+                        <!--<a href="johndislaresume.html">Resume</a>-->
                     </li>
                     <li id="about">
                         <a>About</a>
@@ -85,8 +89,7 @@ if(isset($_POST['submit'])){
                         <h4>Featured Code Along</h4>
                     </center>
                     <div class="card col s12 m12 l12 hoverable featured">
-                        <iframe width="420" height="215" src="https://www.youtube.com/embed/Y5SwWhEXR5M">
-                        </iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mpMw53ymwmI?start=8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!-- <div class="card col s12 m12 l5 hoverable featured">
                         <h4>Featured Code Along</h4>
@@ -113,10 +116,10 @@ if(isset($_POST['submit'])){
                     <center>
                         <h5 style="text-decoration: underline;">The start</h5>
                     </center>
-                    <p id="aboutext">A while ago, I used to build websites with plain HTML.
+                    <p id="aboutext">I got started with development in college.
                         <br>
-                        Development was a hobby back then and I also studied music and sound engineering. Years went by
-                        and development had changed so much but I started getting back into it.</p>
+                        Development was a hobby back then and I also studied music and sound engineering.  I decided to focus more on web
+                        development about a year ago.  Now most of the time I am coding mostly with PHP or Javascript. </p>
                     <br>
                     <p id="aboutext">
                         Fast forward to today, I love web development even more.
@@ -134,14 +137,12 @@ if(isset($_POST['submit'])){
                         coupled with
                         <span style="font-weight: bold;" class="hoverable">programming and analysis training in
                             college</span>.
-                        I also served an eclesiastical mission for two
-                        years.
                     </p>
                     <br>
-                    <p id="aboutext">My journey through web development has taken me from using the
-                        <span style="font-weight: bold;" class="hoverable">MERN stack</span> to now jumping into
-                        <span style="font-weight: bold;" class="hoverable">Wordpress and Laravel</span>. I've had to
-                        learn many different disciplines through out my time and
+                    <p id="aboutext">My specialization in web development is to take a design and translate that into
+                        <span style="font-weight: bold;" class="hoverable">a responsive site</span>.  I also love to introduce dynamics with
+                        <span style="font-weight: bold;" class="hoverable">JS, PHP and SQL</span>. I've had to
+                        learn and study so much through out my short time and
                         I have a tendency to not stop until a problem is solved.</p>
                 </div>
                 <div class="col l1"></div>
@@ -150,9 +151,7 @@ if(isset($_POST['submit'])){
                         <h5 style="text-decoration: underline;">Value</h5>
                     </center>
                     <p id="aboutext">I hold a technical diploma in web development with focus on programming from
-                        Valencia College. Have done some work as Admin. Recently I took over as webmaster of the main
-                        school
-                        site.</p>
+                        Valencia College and UCF. Processionaly I've worked as web admin for a local school and small projects.</p>
                     <br>
                     <p id="aboutext">I work in tech support currently but would love to focus more on
                         the design and development
@@ -167,6 +166,94 @@ if(isset($_POST['submit'])){
     </div>
     <br>
     <!--PORTFOLIO-->
+    
+    <div class="no-padding-bottom portfolioSec" id="cardDark" style="background:#06080C;">
+        <div class="container" data-aos="fade-in">
+            <center>
+                <span id="cardTitle">Mobile Dash (only mobile view)</span>
+                <br>
+                <br>
+                <br>
+                
+                <!--Projects-->
+                <div class="row hoverable">
+                    <div class="col s12 m12 l6">
+                        <a href="https://github.com/jondisla/mobiledash" target="_blank">
+                            <img id="projectpics" src="assets/img/dashshot.png" style="width:200px;height:400px">
+                        </a>
+                    </div>
+                    <div class="col s12 m12 l6" data-aos="fade-in">
+                        <p>This is the front end design developed with HTML, CSS and Javascript.  This is just the design phase and not a complete app.</p>
+                        <br>
+                        <p>This design was possible with a mix of Bootstrap grid to get the cards to fit as columns.  Font Awesome was used for the buttons,
+                       and a Javascript library called Swipe was used for the Popular Courses.  You are welcome to swipe through the popular courses to check
+                       it's functionality.
+                        </p>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <center>
+            <ul style="margin-top: -30px;" data-aos="flip-up" data-aos-duration="2000">
+                <li>
+                    <img id="projectstech" src="assets/img/basicstack.png">
+                </li>
+                <li>
+                    <img id="projectstech" src="assets/img/bootstrap.png">
+                </li>
+                <li>
+                    <img id="projectstech" src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png">
+                </li>
+                <!--<li>
+                    <img id="projectstech" src="assets/img/icon-mysql.png">
+                </li>-->
+            </ul>
+        </center>
+    </div>
+    
+    <!-- PLAN MY DAY-->
+    <div id="card-white">
+        <div class="container" data-aos="fade-in" data-aos-duration="1000">
+            <center>
+                <span id="cardTitle">Plan My Day</span>
+                <br>
+                <br>
+                <br>
+                <!--Projects-->
+                <div class="row hoverable">
+                    <div class="col s12 m12 l6">
+                        <p>Simple todo app using PHP to perform CRUD operation with MySql. The front end is html, Sass
+                            and Javascript.</p>
+                        <br>
+                        <p>Features adding, editing and removing tasks.</p>
+                    </div>
+                    <div class="col s12 m12 l6">
+                        <a href="https://planmyday.johndisla.com" target="_blank">
+                            <img id="projectpics" src="assets/img/planmyday.png">
+                        </a>
+                    </div>
+                </div>
+                <center>
+                    <ul style="margin-top: -30px;" data-aos="flip-up" data-aos-duration="2000">
+                        <li>
+                            <img id="projectstech" src="assets/img/basicstack.png">
+                        </li>
+                        <li>
+                            <img id="projectstech" src="assets/img/bootstrap.png">
+                        </li>
+                        <li>
+                            <img id="projectstech" src="assets/img/php.png">
+                        </li>
+                        <li>
+                            <img id="projectstech" src="assets/img/icon-mysql.png">
+                        </li>
+                    </ul>
+                </center>
+        </div>
+        </center>
+    </div>
+    
+    <!--PLAN IT-->
 
     <div class="no-padding-bottom portfolioSec" id="cardDark" style="background:rgb(199, 75, 75);">
         <div class="container" data-aos="fade-in">
@@ -215,47 +302,7 @@ if(isset($_POST['submit'])){
         </center>
     </div>
 
-    <!-- //////ESTORE -->
-    <div id="card-white">
-        <div class="container" data-aos="fade-in" data-aos-duration="1000">
-            <center>
-                <span id="cardTitle">Plan My Day</span>
-                <br>
-                <br>
-                <br>
-                <!--Projects-->
-                <div class="row hoverable">
-                    <div class="col s12 m12 l6">
-                        <p>Simple todo app using PHP to perform CRUD operation with MySql. The front end is html, Sass
-                            and Javascript.</p>
-                        <br>
-                        <p>Features adding, editing and removing tasks.</p>
-                    </div>
-                    <div class="col s12 m12 l6">
-                        <a href="https://planmyday.johndisla.com" target="_blank">
-                            <img id="projectpics" src="assets/img/planmyday.png">
-                        </a>
-                    </div>
-                </div>
-                <center>
-                    <ul style="margin-top: -30px;" data-aos="flip-up" data-aos-duration="2000">
-                        <li>
-                            <img id="projectstech" src="assets/img/basicstack.png">
-                        </li>
-                        <li>
-                            <img id="projectstech" src="assets/img/bootstrap.png">
-                        </li>
-                        <li>
-                            <img id="projectstech" src="assets/img/php.png">
-                        </li>
-                        <li>
-                            <img id="projectstech" src="assets/img/icon-mysql.png">
-                        </li>
-                    </ul>
-                </center>
-        </div>
-        </center>
-    </div>
+    
     <!--Corkboard-->
     <div class="no-padding-bottom" id="cardDark">
         <div class="container" data-aos="fade-in" data-aos-duration="1000">
@@ -432,21 +479,27 @@ if(isset($_POST['submit'])){
                 <h4>Let's talk</h4>
             </center><br>
             <div class="row">
-                <form action="contact-form.php" method="POST" class="col s12">
+                <form action="index.php" method="POST" class="col s12">
                     <div class="row">
-                        <div class="input-field col s6 l6">
-                            <input id="name" type="text" class="validate">
+                        <div class="input-field col s12 l6">
+                            <input name="name" id="name" type="text" class="validate" required>
                             <label for="name">Name</label>
                         </div>
                         <div class="row">
                             <div class="input-field col s12 l6">
-                                <input id="email" type="email" class="validate">
+                                <input name="subject" type="text" class="validate" required>
+                                <label for="subject">Company</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 l12">
+                                <input name="mail" id="email" type="email" class="validate" required>
                                 <label for="mail">Email</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <textarea id="message" class="materialize-textarea"></textarea>
+                                <textarea name="message" id="message" class="materialize-textarea" required></textarea>
                                 <label for="message">Message</label>
                             </div>
                         </div>
@@ -454,7 +507,7 @@ if(isset($_POST['submit'])){
             </div>
         </div>
         <div class="modal-footer">
-            <button type="submit" class="modal-close waves-effect waves-green btn-flat">SUBMIT</a>
+            <button name="submit" type="submit" class="waves-effect waves-green btn-flat">SUBMIT</a>
         </div>
         </form>
     </div>
