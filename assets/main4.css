@@ -208,7 +208,7 @@ a:hover {
   left: 46%;
   text-align: center;
   bottom: 0;
-  display:none;
+  display: none;
 }
 
 #downArrow {
@@ -463,13 +463,44 @@ textarea {
   color: #000;
 }
 
+/* SLIDERS */
 
+.slider {
+  padding: 40px 0;
+
+}
+
+#slidersmall {
+  display: none;
+}
+
+.holdslide {
+  cursor: grab;
+  color: rgb(92, 149, 185);
+  font-weight: bold;
+  padding: 20px 0px 0px;
+}
+
+.holdslide:active {
+  cursor: grabbing;
+}
 
 /*Media queries*/
-@media only screen and (min-width: 660px) {
-#resume{
-display:block;
+@media only screen and (max-width: 1320px) {
+  #sliderfull {
+    display: none;
+  }
+
+  #slidersmall {
+    display: block;
+  }
 }
+
+@media only screen and (min-width: 660px) {
+
+  #resume {
+    display: block;
+  }
 
   .topTitle h1 {
     /* background: yellow; */
@@ -487,7 +518,6 @@ display:block;
   }
 
   #apps {
-    background: rgb(255, 74, 74);
     color: white;
   }
 
@@ -502,7 +532,9 @@ display:block;
 }
 
 @media only screen and (max-width: 573px) {
-  .arrowBg {
+
+  .arrowBg,
+  #sliderfull {
     display: none;
   }
 
@@ -522,7 +554,12 @@ display:block;
 }
 
 @media only screen and (max-width: 360px) {
-  .arrowBg {
+  #slidersmall {
+    display: block;
+  }
+
+  .arrowBg,
+  #sliderfull {
     display: none;
   }
 
