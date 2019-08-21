@@ -12,7 +12,8 @@
       margin: 0;
       padding: 0;
     }
-    .swiper-container {
+    .swiper-container{
+    z-index:0;
       width: 100%;
       height: 100%;
     }
@@ -39,6 +40,7 @@
   <!-- Swiper -->
   <div class="swiper-container slider" id="sliderfull">
     <div class="swiper-wrapper">
+    <div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/ZI3h0JbU6LI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
       <div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/mpMw53ymwmI?start=8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
       <div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/wG5RWz74XFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
       <div class="swiper-slide"><iframe width="580" height="315" src="https://www.youtube.com/embed/7kO0i7PrkHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>

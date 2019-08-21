@@ -38,7 +38,7 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="assets/swiper.min.css">
     <script type="text/javascript" src="assets/swiper.min.js"></script>
 
-    <link rel="stylesheet" href="assets/main4.css">
+    <link rel="stylesheet" href="assets/main.css">
 
     <title>John Disla</title>
 </head>
